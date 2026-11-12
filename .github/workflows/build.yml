@@ -38,4 +38,8 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: Ready-APK
+          path: "**/build/outputs/apk/debug/*.apk"     - name: Upload APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: Ready-APK
           path: "**/build/outputs/apk/debug/*.apk"
